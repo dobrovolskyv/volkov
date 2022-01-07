@@ -12,6 +12,9 @@
     justify-content: space-around;
   }
   &__price {
+    border-radius: 29px;
+    background: linear-gradient(315deg, #ffffff, #e6e6e6);
+    box-shadow: -44px -44px 11px $grey, 44px 44px 11px $red;
     width: 500px;
     height: 400px;
     form {

@@ -12,10 +12,12 @@
     margin-top: 20px;
     font-weight: 700;
     align-items: center;
+    backface-visibility: hidden;
   }
   &__coast {
     font-weight: 700;
     font-size: 30px;
+    backface-visibility: hidden;
     span {
       font-weight: 400;
       font-size: 24px;
@@ -24,13 +26,15 @@
   &__list {
     position: absolute;
     text-align: left;
-    margin-left: 15px;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 20px;
-    width: 85%;
+    max-width: 90%;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 1);
     color: $white;
+    border-radius: 29px;
+    z-index: 2;
   }
   &__item {
     margin-top: 30px;
@@ -51,11 +55,13 @@
     border-radius: 29px;
     box-shadow: 5px 5px 11px $red;
     transition: all 0.7s ease-out;
+    backface-visibility: hidden;
   }
 }
 .cards {
   display: flex;
   justify-content: space-around;
+  // flex-direction: column;
   flex-wrap: wrap;
 }
 .card__price {
@@ -67,29 +73,27 @@
   background: linear-gradient(315deg, #ffffff, #e6e6e6);
   box-shadow: -44px -44px 11px $grey, 44px 44px 11px $red;
   width: 450px;
-  min-height: 350px;
+  max-height: 760px;
   align-items: center;
   text-align: center;
   margin-top: auto;
   margin-top: 150px;
   position: relative;
+  transform-style: preserve-3d;
 }
 
 .card__price:hover {
   transform: rotateY(180deg);
-  transition: transform 0.5s ease-in;
-  .price__btn {
-    display: none;
-  }
-  .price__coast {
-    display: none;
-  }
+  transition: transform 0.4s ease-in;
   .price__list {
     transform: rotateY(-180deg);
   }
   .hidden {
     opacity: 1;
     visibility: visible;
+  }
+  .price__btn {
+    transform: rotateY(-180deg);
   }
 }
 
