@@ -1,0 +1,11 @@
+.info {
+  background-color: $bg;
+  color: $white;
+  padding-top: 50px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+  }
+}

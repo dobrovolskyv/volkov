@@ -1,0 +1,52 @@
+.stages {
+  background: $bg;
+  padding: 150px 0;
+  color: $white;
+  &__inner {
+    margin-top: 100px;
+  }
+  &__title {
+    font-size: 50px;
+    line-height: 50px;
+    color: $red;
+    padding-top: 50px;
+  }
+  &__title:not(:first-child) {
+    margin-top: 60px;
+    font-size: 40px;
+  }
+  &__subtitle {
+    margin-top: 50px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  &__list {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__item {
+    margin-top: 10px;
+  }
+}
+
+.svg__text {
+  animation: text 2s infinite linear;
+}
+.svg__text {
+  font-size: 25px;
+}
+
+.bwl {
+  stroke-dashoffset: 1000;
+  stroke-dasharray: 1000;
+  animation: line 5s infinite 1s;
+}
+.lv {
+  animation: line 3s infinite 5s;
+}
+@keyframes line {
+  to {
+    stroke-dashoffset: 1;
+  }
+}

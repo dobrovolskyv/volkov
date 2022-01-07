@@ -1,0 +1,45 @@
+.feetback {
+  background-color: $bg;
+  padding: 100px 0;
+  color: $white;
+  &__inner {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+.content {
+  border-radius: 15px;
+  background: $white;
+  height: 250px;
+  width: 550px;
+  padding: 15px;
+  position: relative;
+  color: $black;
+  align-items: center;
+  &__img {
+    border-radius: 50%;
+    width: 20%;
+    position: absolute;
+  }
+  &__title {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  &__text {
+    margin-left: 150px;
+  }
+  &__subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &__link {
+    margin-top: 10px;
+  }
+  &__img-stars {
+    width: 30%;
+    margin-left: 10px;
+  }
+}

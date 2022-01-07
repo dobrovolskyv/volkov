@@ -1,0 +1,99 @@
+.price {
+  background-color: $bg;
+  padding: 100px 0;
+  &__main-title {
+    font-size: $fstitle;
+    color: $white;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 45px;
+    margin-top: 20px;
+    font-weight: 700;
+    align-items: center;
+  }
+  &__coast {
+    font-weight: 700;
+    font-size: 30px;
+    span {
+      font-weight: 400;
+      font-size: 24px;
+    }
+  }
+  &__list {
+    position: absolute;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 85%;
+    background-color: rgba(0, 0, 0, 1);
+    color: $white;
+  }
+  &__item {
+    margin-top: 30px;
+  }
+  &__btn {
+    background: transparent;
+    margin-top: 30px;
+    border-radius: 29px;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__btn:hover {
+    border: none;
+    background: $red;
+    margin-top: 30px;
+    border-radius: 29px;
+    box-shadow: 5px 5px 11px $red;
+    transition: all 0.7s ease-out;
+  }
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  border-radius: 29px;
+  background: linear-gradient(315deg, #ffffff, #e6e6e6);
+  box-shadow: -44px -44px 11px $grey, 44px 44px 11px $red;
+  width: 450px;
+  min-height: 350px;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  margin-top: 150px;
+  position: relative;
+}
+
+.card__price:hover {
+  transform: rotateY(180deg);
+  transition: transform 0.5s ease-in;
+  .price__btn {
+    display: none;
+  }
+  .price__coast {
+    display: none;
+  }
+  .price__list {
+    transform: rotateY(-180deg);
+  }
+  .hidden {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
