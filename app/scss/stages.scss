@@ -4,6 +4,7 @@
   color: $white;
   &__inner {
     margin-top: 100px;
+    padding: 0 5px;
   }
   &__title {
     font-size: 50px;
@@ -11,22 +12,25 @@
     color: $red;
     padding-top: 50px;
   }
-  &__title:not(:first-child) {
-    margin-top: 60px;
-    font-size: 40px;
-  }
+
   &__subtitle {
-    margin-top: 50px;
+    margin: 50px 0;
     font-size: 24px;
     line-height: 30px;
   }
   &__list {
     margin-top: 30px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 28px;
   }
   &__item {
-    margin-top: 10px;
+    margin-top: 30px;
+  }
+  &__span {
+    font-size: 36px;
+    color: $red;
+    font-weight: 700;
+    margin-right: 10px;
   }
 }
 

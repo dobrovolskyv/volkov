@@ -32,3 +32,13 @@
 .copyright {
   margin-top: 45px;
 }
+
+.sponsors {
+  background: $grey;
+  &__inner {
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
