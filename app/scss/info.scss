@@ -1,11 +1,21 @@
 .info {
   background-color: $bg;
   color: $white;
-  padding-top: 50px;
+  padding: 100px 0;
+  min-height: 100vh;
   &__inner {
     display: flex;
     justify-content: space-between;
   }
-  &__title {
+  &__text {
+    font-size: 22px;
+    line-height: 30px;
+    max-width: 500px;
+    padding: 0 5px;
+    text-align: left;
+  }
+  &__span {
+    background: $red;
+    border-radius: 10px;
   }
 }

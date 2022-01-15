@@ -13,6 +13,9 @@
     font-weight: 700;
     align-items: center;
     backface-visibility: hidden;
+
+    &:hover {
+    }
   }
   &__coast {
     font-weight: 700;
@@ -24,15 +27,15 @@
     }
   }
   &__list {
-    position: absolute;
+    // position: absolute;
     text-align: left;
     margin-top: 20px;
     font-size: 18px;
     line-height: 20px;
     max-width: 90%;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 1);
-    color: $white;
+    // background-color: rgba(0, 0, 0, 1);
+    color: $black;
     border-radius: 29px;
     z-index: 2;
   }
@@ -46,7 +49,6 @@
     border: 1px solid black;
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 10px;
   }
   &__btn:hover {
     border: none;
@@ -56,6 +58,7 @@
     box-shadow: 5px 5px 11px $red;
     transition: all 0.7s ease-out;
     backface-visibility: hidden;
+    margin-bottom: 10px;
   }
 }
 .cards {
@@ -82,20 +85,20 @@
   transform-style: preserve-3d;
 }
 
-.card__price:hover {
-  transform: rotateY(180deg);
-  transition: transform 0.4s ease-in;
-  .price__list {
-    transform: rotateY(-180deg);
-  }
-  .hidden {
-    opacity: 1;
-    visibility: visible;
-  }
-  .price__btn {
-    transform: rotateY(-180deg);
-  }
-}
+// .card__price:hover {
+//   transform: rotateX(180deg);
+//   transition: transform 0.4s ease-in;
+//   .price__list {
+//     transform: rotateX(-180deg);
+//   }
+//   .hidden {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+//   .price__btn {
+//     transform: rotateY(-180deg);
+//   }
+// }
 
 .hidden {
   opacity: 0;

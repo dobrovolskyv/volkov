@@ -4,8 +4,13 @@
   padding: 150px 0 30px;
   color: $white;
   font-size: 14px;
+  // &__contacts {
+  //   display: flex;
+  //   justify-content: center;
+  // }
   &__list {
     display: flex;
+    // flex-direction: column;
     justify-content: center;
     margin-top: 15px;
     text-align: center;
@@ -34,11 +39,32 @@
 }
 
 .sponsors {
-  background: $grey;
+  background: $bg;
+  align-items: center;
+  margin-top: 200px;
+  position: relative;
+
   &__inner {
     display: flex;
-    // flex-direction: column;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    position: relative;
+
+    img {
+      width: 20%;
+      filter: contrast(250%);
+      margin-right: 25px;
+      margin-top: 15px;
+      display: inline-block;
+    }
+  }
+  &__animate-1 {
+    position: absolute;
+    top: 10px;
+  }
+  &__animate-2 {
+    position: absolute;
+    top: 10px;
   }
 }

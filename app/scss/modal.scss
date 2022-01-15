@@ -31,7 +31,12 @@
     font-size: 24px;
     line-height: 30px;
     margin: 15px;
+    padding: 5px 10px;
+    &:focus {
+      outline: 1px solid $red;
+    }
   }
+
   &__btn {
     background: $red;
     margin-top: 30px;

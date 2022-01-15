@@ -1,26 +1,43 @@
 .advantage {
   background: $bg;
   color: $white;
-  font-size: 22px;
+  font-size: 24px;
+  padding: 100px 0;
   &__inner {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 50px;
   }
   &__content {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     max-height: 350px;
     align-items: center;
+    background: rgb(30, 30, 30);
+    border-radius: 15px;
+    padding: 10px;
   }
-  &__content:nth-child(1),
-  &__content:nth-child(4) {
-    background: blue;
+
+  &__content:nth-child(5) {
+    background: $red;
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 1;
+  }
+
+  &__content:nth-child(1),
+  &__content:nth-child(6) {
+    background: $red;
+    grid-column: span 3;
+    grid-row: span 1;
+    text-align: left;
   }
   &__count {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
-    margin: 10px;
+    margin: 20px;
+  }
+  &__title {
+    margin-top: 200px;
   }
 }

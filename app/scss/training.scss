@@ -39,6 +39,7 @@
     text-shadow: 1px 1px 10px rgb(200, 200, 200);
     margin: 0 30px;
     text-align: left;
+    margin-right: 75px;
   }
 }
 
@@ -79,14 +80,14 @@ button {
 }
 .arrow .down-button {
   transform: translateX(-100%);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .arrow .up-button {
   transform: translateY(-100%);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .arrow-up {
   transform: rotate(180deg);
