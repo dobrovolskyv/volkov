@@ -92,3 +92,5 @@ cards.addEventListener("click", function () {
   const list = document.querySelector(".price__list");
   list.classList.toggle("hidden");
 });
+
+// new cards
