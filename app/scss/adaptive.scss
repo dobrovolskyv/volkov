@@ -8,9 +8,18 @@
   //info
   .info {
     padding: $adaptivepadding1;
+    &__inner {
+      flex-direction: column;
+    }
     &__text {
+      max-width: 100%;
       font-size: 18px;
       line-height: 26px;
+      margin: 20px;
+    }
+    &__frame iframe {
+      width: 100%;
+      transform: translate(15%, 5%);
     }
   }
   //training
@@ -107,6 +116,23 @@
   }
 }
 @media (max-width: 768px) {
+  //info
+  .info {
+    padding: $adaptivepadding1;
+    &__inner {
+      flex-direction: column;
+    }
+    &__text {
+      max-width: 100%;
+      font-size: 18px;
+      line-height: 26px;
+      margin: 20px;
+    }
+    &__frame iframe {
+      width: 90%;
+      transform: translate(5%, 5%);
+    }
+  }
 }
 @media (max-width: 480px) {
 }
