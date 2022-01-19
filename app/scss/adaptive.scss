@@ -1,0 +1,114 @@
+//dispay 992, 768, 480, 320
+
+@media (max-width: 992px) {
+  //header
+  .container {
+    max-width: 960px;
+  }
+  //info
+  .info {
+    padding: $adaptivepadding1;
+    &__text {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  //training
+  .training {
+    &__title {
+      font-size: 26px;
+      width: 250px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .sidebar {
+    &__content {
+      margin-top: 0;
+    }
+  }
+  .ofp {
+    margin-left: 0;
+  }
+
+  //stages
+  .stages {
+    padding: $adaptivepadding1;
+    &__inner {
+      margin-top: 0;
+    }
+    &__img svg {
+      width: 940px;
+    }
+    &__title {
+      font-size: $adaptivetitle1;
+    }
+    &__subtitle {
+      font-size: 22px;
+      margin: 30px 0;
+    }
+    &__list {
+      font-size: 18px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item img {
+      width: 100%;
+    }
+    &__item:nth-child(7) {
+      display: none;
+    }
+    &__item:nth-child(1),
+    &__item:nth-child(3),
+    &__item:nth-child(2),
+    &__item:nth-child(5) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    &__span {
+      font-size: 30px;
+    }
+  }
+  //advantage
+  .advantage {
+    padding: $adaptivepadding1;
+    font-size: 18px;
+    &__inner {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__content:nth-child(5) {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+
+    &__content:nth-child(1),
+    &__content:nth-child(6) {
+      grid-column: span 3;
+      grid-row: span 1;
+    }
+    &__count {
+      font-size: 40px;
+      font-weight: 700;
+      margin: 10px;
+    }
+    &__title {
+      font-size: 36px;
+    }
+  }
+  //price
+  .list-boxs .card .head {
+    font-size: 18px;
+  }
+  .price__item {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 320px) {
+}

@@ -4,6 +4,12 @@
   padding: 150px 0 30px;
   color: $white;
   font-size: 14px;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   // &__contacts {
   //   display: flex;
   //   justify-content: center;
@@ -29,6 +35,12 @@
   margin-top: 15px;
   border: 1px solid $white;
   padding: 10px 5px;
+  width: 150px;
+}
+.call:hover {
+  transition: all 0.5s linear;
+  color: black;
+  background: white;
 }
 
 .telegram {
@@ -36,6 +48,12 @@
 }
 .copyright {
   margin-top: 45px;
+  cursor: pointer;
+}
+.copyright:hover {
+  transition: transform 0.5s linear;
+  transform: scale(1.1);
+  border-bottom: 1px solid white;
 }
 
 .sponsors {
@@ -50,6 +68,7 @@
     flex-direction: row;
     align-items: center;
     position: relative;
+    animation: spons 10s infinite linear;
 
     img {
       width: 12%;
@@ -58,11 +77,6 @@
       margin-top: 15px;
       display: inline-block;
     }
-  }
-  &__animate-1 {
-    position: absolute;
-    top: 10px;
-    animation: spons 10s infinite linear;
   }
 }
 

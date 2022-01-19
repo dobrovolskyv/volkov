@@ -2,13 +2,13 @@
   position: relative;
   overflow: hidden;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: #000;
   img {
     width: 100%;
   }
   &__title {
-    font-size: 38px;
+    font-size: 2rem;
     max-width: 370px;
   }
   &__text {
@@ -29,15 +29,16 @@
 
   &__content {
     height: 100%;
-    max-width: 370px;
+    flex-basis: 370px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     align-items: center;
     justify-content: center;
     color: $white;
     text-shadow: 1px 1px 10px rgb(200, 200, 200);
-    margin: 0 30px;
+    margin-left: 30px;
+    margin-top: 15px;
     text-align: left;
     margin-right: 75px;
   }
@@ -77,6 +78,7 @@ button {
   top: 50%;
   z-index: 10;
   background: $red;
+  width: 5%;
 }
 .arrow .down-button {
   transform: translateX(-100%);

@@ -12,7 +12,7 @@
   &__content {
     display: flex;
     justify-content: flex-start;
-    max-height: 350px;
+    // max-height: 350px;
     align-items: center;
     background: rgb(30, 30, 30);
     border-radius: 15px;
@@ -36,8 +36,5 @@
     font-size: 50px;
     font-weight: 700;
     margin: 20px;
-  }
-  &__title {
-    margin-top: 200px;
   }
 }

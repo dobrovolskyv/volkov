@@ -12,12 +12,13 @@
 .content {
   border-radius: 15px;
   background: $white;
-  height: 250px;
-  width: 550px;
+  max-height: 250px;
+  max-width: 550px;
   padding: 15px;
   position: relative;
   color: $black;
   align-items: center;
+  overflow: scroll;
   &__img {
     border-radius: 50%;
     width: 20%;
