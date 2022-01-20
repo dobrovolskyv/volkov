@@ -3,13 +3,14 @@
 @media (max-width: 992px) {
   //header
   .container {
-    max-width: 960px;
+    max-width: 970px;
   }
   //info
   .info {
     padding: $adaptivepadding1;
     &__inner {
       flex-direction: column;
+      align-items: center;
     }
     &__text {
       max-width: 100%;
@@ -18,8 +19,8 @@
       margin: 20px;
     }
     &__frame iframe {
-      width: 100%;
-      transform: translate(15%, 5%);
+      max-width: 660px;
+      // transform: translate(10%, 5%);
     }
   }
   //training
@@ -108,18 +109,83 @@
     }
   }
   //price
+  .section-prices {
+    padding-top: 100px;
+  }
   .list-boxs .card .head {
     font-size: 18px;
   }
   .price__item {
     font-size: 16px;
   }
+  .feetback {
+    padding: $adaptivepadding1;
+    &__inner {
+      margin-top: $adaptivepadding1;
+      gap: 30px;
+    }
+  }
 }
 @media (max-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+
+  //header
+  .menu {
+    display: flex;
+    position: relative;
+    &__burger {
+      cursor: pointer;
+    }
+    &__border {
+      width: 50px;
+      height: 3px;
+      margin-top: 3px;
+      background: $white;
+    }
+    &__list {
+      position: absolute;
+      top: 25px;
+      left: 0;
+      background-color: rgba(0, 0, 0, 1);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+    &__list--active {
+      opacity: 1;
+      visibility: visible;
+    }
+    &__item {
+      color: $white;
+      cursor: pointer;
+    }
+    &__link {
+      display: block;
+      width: 100%;
+      padding: 5px 10px;
+      &:hover {
+        background-color: $red;
+      }
+    }
+  }
+  .nav__list {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    position: absolute;
+    right: 100px;
+    top: 15px;
+    z-index: 10;
+  }
+
   //info
   .info {
     padding: $adaptivepadding1;
     &__inner {
+      margin-top: 0;
       flex-direction: column;
     }
     &__text {
@@ -129,9 +195,130 @@
       margin: 20px;
     }
     &__frame iframe {
-      width: 90%;
-      transform: translate(5%, 5%);
+      max-width: 550px;
+      max-height: 380px;
     }
+  }
+  //training
+  .training {
+    display: none;
+  }
+
+  .adaptive {
+    background: $bg;
+    display: block;
+    &__cards {
+      overflow: hidden;
+    }
+    &__item {
+      width: 500px;
+      height: 50px;
+      background: white;
+      margin-top: 10px;
+      transform: translateX(-400px);
+      &:hover {
+        transition: all 1s ease-in-out;
+        transform: translateX(0);
+        cursor: pointer;
+      }
+    }
+    &__inner {
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__img {
+      overflow: hidden;
+      margin: 0 auto;
+      display: block;
+    }
+    &__contentbox {
+      position: relative;
+      overflow: hidden;
+      max-width: 630px;
+      max-height: 700px;
+      margin: auto;
+      // &:hover .adaptive__content {
+      //   background: rgba(0, 0, 0, 0.5);
+      //   bottom: 10px;
+      //   left: 8px;
+      //   transform: translateY(0px);
+      //   transition: transform 0.3s ease-in-out;
+      // }
+    }
+    &__content {
+      max-width: 100%;
+      z-index: 2;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      color: $white;
+      // transform: translateY(250px);
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+    }
+    &__title {
+      font-size: 25px;
+    }
+    &__text {
+      font-size: 20px;
+    }
+  }
+  //stages
+  .stages__img-svg {
+    display: none;
+  }
+  .adaptive_stages__img {
+    display: flex;
+    justify-content: center;
+  }
+  .stages {
+    &__item:nth-child(2),
+    &__item:nth-child(6),
+    &__item:nth-child(1),
+    &__item:nth-child(5) {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+  //price
+
+  .list-boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 0px;
+  }
+  .list-boxs .card {
+    width: 400px;
+  }
+  //modal
+  .modal {
+    &__inner {
+      padding: 0 10px;
+    }
+    &__price {
+      width: 400px;
+      height: 400px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .info__frame iframe {
+    max-width: 400px;
+    max-height: 300px;
+  }
+  .adaptive_stages__img {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+  }
+  //price
+  .list-boxs .card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
   }
 }
 @media (max-width: 480px) {

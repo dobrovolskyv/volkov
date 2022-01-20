@@ -2,6 +2,7 @@
   background: $bg;
   padding: 150px 0;
   color: $white;
+  overflow: hidden;
   &__inner {
     margin-top: 100px;
     padding: 0 5px;
@@ -82,4 +83,8 @@
   to {
     stroke-dashoffset: 1;
   }
+}
+
+.adaptive_stages__img {
+  display: none;
 }
