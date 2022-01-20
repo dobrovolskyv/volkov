@@ -47,6 +47,10 @@ header {
     line-height: 22px;
     display: block;
   }
+  &__link {
+    scroll-behavior: smooth;
+    transition: scroll-behavior 2s ease-in-out;
+  }
 }
 .header__socials {
   position: absolute;
@@ -70,4 +74,7 @@ header {
 }
 .telegram {
   width: 82%;
+}
+.menu {
+  display: none;
 }
