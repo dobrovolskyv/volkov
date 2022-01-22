@@ -1,4 +1,9 @@
 //dispay 992, 768, 480, 320
+@media (max-width: 1140px) {
+  .stages__img-svg svg {
+    width: 900px;
+  }
+}
 
 @media (max-width: 992px) {
   //header
@@ -20,7 +25,6 @@
     }
     &__frame iframe {
       max-width: 660px;
-      // transform: translate(10%, 5%);
     }
   }
   //training
@@ -110,6 +114,7 @@
   }
   //price
   .section-prices {
+    overflow: hidden;
     padding-top: 100px;
   }
   .list-boxs .card .head {
@@ -120,9 +125,35 @@
   }
   .feetback {
     padding: $adaptivepadding1;
+    overflow: hidden;
     &__inner {
       margin-top: $adaptivepadding1;
       gap: 30px;
+    }
+  }
+  //modal
+  .modal {
+    overflow: hidden;
+    &__inner {
+      padding: 0 10px;
+      justify-content: center;
+    }
+    &__price {
+      width: 400px;
+      height: 400px;
+      padding-right: 30px;
+    }
+    &__input {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &_btn {
+      width: 30%;
+      margin-top: 0px;
+    }
+    &__price {
+      box-shadow: -24px -24px 11px $grey, 24px 24px 11px $red;
+      padding-right: 30px;
     }
   }
 }
@@ -176,7 +207,7 @@
   .menu {
     display: flex;
     position: absolute;
-    right: 100px;
+    right: 40px;
     top: 15px;
     z-index: 10;
   }
@@ -316,13 +347,14 @@
       justify-content: center;
     }
     &__price {
-      width: 400px;
-      height: 400px;
+      width: 300px;
+      height: 300px;
       padding-right: 30px;
     }
     &__input {
       font-size: 18px;
       line-height: 22px;
+      margin: 0;
     }
     &_btn {
       width: 30%;
@@ -330,7 +362,6 @@
     }
     &__price {
       box-shadow: -24px -24px 11px $grey, 24px 24px 11px $red;
-
       padding-right: 30px;
     }
   }
@@ -341,8 +372,21 @@
     max-height: 300px;
   }
   //
-
-  .adaptive_stages__img {
+  .advantage {
+    overflow: hidden;
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__content:nth-child(1),
+    &__content:nth-child(5),
+    &__content:nth-child(6) {
+      background: $red;
+      grid-column: span 1;
+      grid-row: span 1;
+      text-align: left;
+    }
+  }
+  .adaptive_stages__img svg {
     width: 400px;
     display: flex;
     justify-content: center;
@@ -355,53 +399,123 @@
     justify-content: center;
     align-items: center;
   }
-}
-@media (max-width: 480px) {
-  .stages {
-    &__item:nth-child(2),
-    &__item:nth-child(3),
-    &__item:nth-child(4),
-    &__item:nth-child(6),
-    &__item:nth-child(1),
-    &__item:nth-child(5) {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
-  }
-  .modal {
+
+  //feetback
+  .feetback {
     &__inner {
-      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
     }
-    &__price {
-      width: 300px;
-      height: 300px;
+  }
+  @media (max-width: 480px) {
+    .container {
+      max-width: 460px;
     }
-    &__input {
-      font-size: 18px;
-      line-height: 22px;
-    }
-    &_btn {
-      width: 30%;
-      margin-top: 0px;
-    }
-    &__price {
-      border-radius: 29px;
-      background: linear-gradient(315deg, #ffffff, #e6e6e6);
-      box-shadow: -24px -24px 11px $grey, 24px 24px 11px $red;
-      width: 300px;
-      height: 300px;
-      form {
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-    &__letter {
+    //header
+    .header video {
       display: none;
     }
+    // .header {
+    //   background-image: url("../images/slide-2.jpg");
+    //   min-width: 100%;
+    //   background-size: cover;
+    //   background-position: center center;
+    // }
+    //info
+    .info__frame iframe {
+      width: 300px;
+      height: 300px;
+      transform: translate(0, 0);
+    }
+
+    //stages
+    .adaptive_stages__img svg {
+      max-width: 350px;
+      display: flex;
+      justify-content: center;
+    }
+
+    //advantage
+    .advantage {
+      overflow: hidden;
+      &__inner {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      &__content:nth-child(1),
+      &__content:nth-child(5),
+      &__content:nth-child(6) {
+        background: $red;
+        grid-column: span 1;
+        grid-row: span 1;
+        text-align: left;
+      }
+    }
+
+    //modal
+    .modal {
+      &__inner {
+        padding: 0 10px;
+        justify-content: center;
+      }
+      &__price {
+        width: 300px;
+        height: 300px;
+      }
+      &__input {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      &_btn {
+        width: 30%;
+        margin-top: 0px;
+      }
+      &__price {
+        border-radius: 29px;
+        background: linear-gradient(315deg, #ffffff, #e6e6e6);
+        box-shadow: -24px -24px 11px $grey, 24px 24px 11px $red;
+        width: 300px;
+        height: 300px;
+        form {
+          margin-top: 50px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      &__letter {
+        display: none;
+      }
+    }
   }
-}
-@media (max-width: 320px) {
+  @media (max-width: 320px) {
+    .container {
+      max-width: 300px;
+    }
+    //header
+    .header video {
+      display: none;
+    }
+    // .header {
+    //   background-image: url("../images/slide-2.jpg");
+    //   width: 100%;
+    //   background-size: cover;
+    //   background-position: center center;
+    // }
+
+    .nav__logo {
+      left: 15px;
+    }
+    .header__socials {
+      width: 200px;
+    }
+
+    //training
+    .adaptive_stages__img svg {
+      width: 300px;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
