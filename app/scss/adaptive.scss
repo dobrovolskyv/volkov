@@ -178,7 +178,7 @@
     &__list {
       position: absolute;
       top: 25px;
-      left: -25px;
+      left: -50px;
       background-color: rgba(0, 0, 0, 1);
       opacity: 0;
       visibility: hidden;
@@ -187,6 +187,7 @@
     &__list--active {
       opacity: 1;
       visibility: visible;
+      transition: all 0.3s ease-in-out;
     }
     &__item {
       color: $white;
@@ -296,6 +297,25 @@
     &__text {
       font-size: 20px;
     }
+    &__arrow {
+      background: $red;
+      padding: 5px;
+      border-radius: 15px;
+    }
+    &__content-arrow {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .arrow-left {
+    transform: rotate(90deg);
+  }
+  .arrow-right {
+    transform: rotate(-90deg);
+  }
+  .prev,
+  .next {
+    background: transparent;
   }
   //stages
   .stages__img-svg {
@@ -418,6 +438,12 @@
     //header
     .header video {
       display: none;
+    }
+    .header {
+      background-image: url("../images/slide-2.jpg");
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
     }
 
     //info
