@@ -59,6 +59,39 @@ document.addEventListener("click", (e) => {
   }
 });
 
+// slides
+const slides = document.querySelectorAll(".adaptive__contentbox"),
+  btnNext = document.querySelector(".next"),
+  btnPrev = document.querySelector(".prev");
+let slideIndex = 1;
+
+showSlide(slideIndex);
+
+function showSlide(n) {
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  slides.forEach((item) => (item.style.display = "none"));
+  slides[slideIndex - 1].style.display = "block";
+}
+
+function plusSlide(n) {
+  showSlide((slideIndex += n));
+  console.log(n);
+}
+
+btnNext.addEventListener("click", () => {
+  plusSlide(1);
+});
+btnPrev.addEventListener("click", () => {
+  plusSlide(-1);
+});
+
 // const header = document.querySelector(".header"),
 //   video = header.querySelector("video"),
 //   headerInner = header.querySelector(".header__inner"),

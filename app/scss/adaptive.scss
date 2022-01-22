@@ -178,7 +178,7 @@
     &__list {
       position: absolute;
       top: 25px;
-      left: 0;
+      left: -25px;
       background-color: rgba(0, 0, 0, 1);
       opacity: 0;
       visibility: hidden;
@@ -391,6 +391,8 @@
     display: flex;
     justify-content: center;
   }
+  //stages
+
   //price
 
   .list-boxs {
@@ -417,12 +419,7 @@
     .header video {
       display: none;
     }
-    // .header {
-    //   background-image: url("../images/slide-2.jpg");
-    //   min-width: 100%;
-    //   background-size: cover;
-    //   background-position: center center;
-    // }
+
     //info
     .info__frame iframe {
       width: 300px;
@@ -431,6 +428,18 @@
     }
 
     //stages
+    .stages {
+      &__item:nth-child(2),
+      &__item:nth-child(3),
+      &__item:nth-child(4),
+      &__item:nth-child(6),
+      &__item:nth-child(1),
+      &__item:nth-child(5) {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+    }
+
     .adaptive_stages__img svg {
       max-width: 350px;
       display: flex;
@@ -497,12 +506,12 @@
     .header video {
       display: none;
     }
-    // .header {
-    //   background-image: url("../images/slide-2.jpg");
-    //   width: 100%;
-    //   background-size: cover;
-    //   background-position: center center;
-    // }
+    .header {
+      background-image: url("../images/slide-2.jpg");
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+    }
 
     .nav__logo {
       left: 15px;
