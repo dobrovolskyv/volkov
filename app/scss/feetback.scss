@@ -3,11 +3,32 @@
   background-color: $bg;
   padding: 100px 0;
   color: $white;
-  &__inner {
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+  // &__inner {
+  //   margin-top: 100px;
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   gap: 50px;
+  // }
+  &__video-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__video {
+    width: 100%;
+    height: 100%;
+  }
+  &__item {
+    max-width: 600px;
+    max-height: 400px;
+    margin: 10px;
+  }
+  &__link {
+    margin-top: 50px;
+    font-size: 16px;
+    align-items: center;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 .content {
