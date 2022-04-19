@@ -1,7 +1,7 @@
 .feetback {
   overflow: hidden;
   background-color: $bg;
-  padding: 100px 0;
+  padding: 150px 0;
   color: $white;
   // &__inner {
   //   margin-top: 100px;
@@ -12,6 +12,7 @@
   &__video-content {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
   }
   &__video {
     width: 100%;

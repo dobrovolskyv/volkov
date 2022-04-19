@@ -23,12 +23,15 @@
     align-items: center;
   }
   &__item {
-    margin-right: 10px;
+    margin-left: 5px;
     cursor: pointer;
     display: inline-block;
   }
   img {
     width: 70%;
+  }
+  &__contacts{
+    overflow: hidden;
   }
 }
 .call {
@@ -61,6 +64,7 @@
   align-items: center;
   margin-top: 200px;
   position: relative;
+  
 
   &__inner {
     display: flex;
@@ -69,13 +73,13 @@
     align-items: center;
     position: relative;
     animation: spons 10s infinite linear;
-
     img {
       width: 12%;
       filter: contrast(250%);
       margin-right: 50px;
       margin-top: 15px;
       display: inline-block;
+     filter: brightness(-10%);
     }
   }
 }

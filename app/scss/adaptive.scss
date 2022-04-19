@@ -225,20 +225,21 @@
 
   //info
   .info {
-    padding: $adaptivepadding1;
+    padding: 30px 5px;
     &__inner {
-      margin-top: 0;
+      
       flex-direction: column;
     }
     &__text {
       max-width: 100%;
       font-size: 18px;
       line-height: 26px;
-      margin: 20px;
+      margin: 50px 0px 90px 0px;
     }
     &__frame iframe {
       max-width: 550px;
       max-height: 380px;
+      margin-bottom: 100px;
     }
   }
   //training
@@ -247,6 +248,7 @@
   }
 
   .adaptive {
+    
     background: $bg;
     display: block;
     &__cards {
@@ -328,6 +330,12 @@
     background: transparent;
   }
   //stages
+  .stages{
+    padding: 200px 0 80px 0;
+    &__inner{
+      margin-top: 80px;
+    }
+  }
   .stages__img-svg {
     display: none;
   }
@@ -379,6 +387,7 @@
 
   //modal
   .modal {
+    padding-top: 100px;
     overflow: hidden;
     &__inner {
       padding: 0 10px;
@@ -403,6 +412,17 @@
       padding-right: 30px;
     }
   }
+  .club__img{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 80%;
+    }
+  }
+  .footer{
+    padding-top: 0px;
+  }
 }
 @media (max-width: 576px) {
   //header
@@ -414,10 +434,16 @@
       right: 10%;
     }
   }
-  .info__frame iframe {
-    max-width: 400px;
-    max-height: 300px;
+  .info{
+    &__frame iframe {
+      max-width: 400px;
+      max-height: 300px;
+    }
+    &__text{
+      margin-bottom: 50px;
+    }
   }
+  
   //
   .advantage {
     overflow: hidden;
@@ -466,6 +492,19 @@
     max-width: 500px;
     max-height: 300px;
   }
+  .modal__inner{
+  flex-direction: column-reverse;
+    
+  }
+  .modal__letter{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    img{
+      width: 50%;
+    }
+  }
+}
   @media (max-width: 480px) {
     .container {
       max-width: 450px;
@@ -481,19 +520,15 @@
       &__list {
         right: 4%;
       }
+      &__item {
+        // background: rgba(0, 0, 0, 0.4);
+        border-radius: 15px;
+        text-shadow: 0px 0px 4px #000;
+      }
     }
-    //header
-    // .header video {
-    //   display: none;
-    // }
-    // .header {
-    //   background-image: url("../images/slide-2.jpg");
-    //   width: 100%;
-    //   background-size: cover;
-    //   background-position: center center;
-    // }
 
     //info
+
     .info__frame iframe {
       width: 300px;
       height: 300px;
@@ -543,6 +578,7 @@
     //modal
     .modal {
       &__inner {
+        
         padding: 0 10px;
         justify-content: center;
       }
@@ -609,4 +645,4 @@
       max-height: 200px;
     }
   }
-}
+
