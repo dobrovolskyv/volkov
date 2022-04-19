@@ -1,5 +1,5 @@
 .footer {
-  background-color: $bg;
+  background-color: rgb(24,24,24);
   text-align: center;
   padding: 150px 0 30px;
   color: $white;
@@ -31,6 +31,7 @@
     width: 70%;
   }
   &__contacts{
+    background: rgb(24,24,24);
     overflow: hidden;
   }
 }
@@ -60,11 +61,11 @@
 }
 
 .sponsors {
-  background: $bg;
+  background: rgb(24,24,24);
   align-items: center;
-  margin-top: 200px;
+  margin-top: 100px;
   position: relative;
-  
+  overflow: hidden;
 
   &__inner {
     display: flex;
