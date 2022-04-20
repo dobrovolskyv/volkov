@@ -327,7 +327,10 @@
   }
   //price
 .section-prices{
-  padding: 50px 0;
+  padding: 60px 0;
+}
+.section-prices .section-header{
+  margin-bottom: 20px;
 }
   .list-boxs {
     display: grid;
@@ -481,19 +484,28 @@
     max-width: 500px;
     max-height: 300px;
   }
-  .modal__inner{
-  flex-direction: column-reverse;
-    gap: 0;
-  }
-  .modal__letter{
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-    
-    img{
-      width: 50%;
+  .modal{
+    &__inner {
+      flex-direction: column-reverse;
+      gap: 0;
     }
+    
+    &__letter {
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+    
+      img {
+        width: 50%;
+      }
+    }
+    // &__logo {
+    //   display: block;
+    //   margin: 0 auto;
+    //   width: 40%;
+    // }
   }
+  
   .club__item{
     margin-top: 8px;
   }
@@ -539,7 +551,7 @@
     .info{
       padding: 0 5px;
       &__text{
-        margin-bottom: 50px;
+        margin-bottom: 20px;
       }
       &__frame iframe {
         width: 360px;
@@ -599,41 +611,14 @@
 }
     }
     
-
-    //modal
-    // .modal {
-    //   &__inner {
+    .button__telegram {
+      margin: 15px 5px 0px 5px;
+      border-radius: 15px;
+      padding: 5px 10px;
+      font-size: 16px;
         
-    //     padding: 0 10px;
-    //     justify-content: center;
-    //   }
-    //   &__price {
-    //     width: 300px;
-    //     height: 300px;
-    //   }
-    //   &__input {
-    //     font-size: 16px;
-    //     line-height: 20px;
-    //   }
-    //   &_btn {
-    //     width: 30%;
-    //     margin-top: 0px;
-    //   }
-    //   &__price {
-    //     border-radius: 29px;
-    //     background: linear-gradient(315deg, #ffffff, #e6e6e6);
-    //     box-shadow: -24px -24px 11px $grey, 24px 24px 11px $red;
-    //     width: 300px;
-    //     height: 300px;
-    //     form {
-    //       margin-top: 50px;
-    //       display: flex;
-    //       flex-direction: column;
-    //       align-items: center;
-    //     }
-    //   }
-     
-    // }
+    }
+   
   }
 
   @media(max-width: 380px){
@@ -740,7 +725,3 @@
     }
   }
 
-.button__telegram{
-  font-size: 50px;
-  color: white;
-}
