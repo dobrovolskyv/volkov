@@ -2,9 +2,9 @@
   padding-top: 30px;
   position: relative;
   background-color: rgb(24, 24, 24);
- 
-  border-bottom: 1px solid $red;
-  
+  &__letter{
+    cursor: pointer;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -55,21 +55,27 @@
   
   
   &-1{
-    width: 400px;
+    width: 800px;
     background: $red;
     height: 5px;
     margin-top: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
   &-2{
-    width: 300px;
+    width: 600px;
     height: 5px;
     background: $red;
     margin-top: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
   &-3{
-    width: 200px;
+    width: 400px;
     height: 5px;
     background: $red;
     margin-top: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 }
