@@ -2,44 +2,55 @@
   padding-top: 30px;
   position: relative;
   background-color: rgb(24, 24, 24);
-  &__letter{
-    cursor: pointer;
+  
+  &__letter img{
+    
+      margin-top: 50px;
+      width: 47%;
   }
   &__inner {
     display: flex;
     justify-content: space-between;
     gap: 50px;
   }
-  &__logo {
-    display: none;
-   
-  }
-  img {
-    margin-top: 50px;
-    width: 47%;
-  }
   
 }
 
 .club {
-    color: $white;
+  color: $white;
   font-size: 18px;
   line-height: 24px;
   
+
   &__title {
     color: $white;
+    &-img{
+      width: 80%;
+    }
+   
+    &-span a{
+          margin-top: 10px;    
+    }
+    
+  }
+ &__link a{
+  display: block;
+  
+ }
+  &__logo {
+    width: 60%;
+  
   }
   &__text{
-    margin-top: 50px;
-    object-fit: right;
-  }
+      margin-top: 50px;
+      }
   &__img{
     display: flex;
     justify-content: space-between;
       
   }
   &__list{
-    margin-top: 30px;
+    margin-top: 30px;    
   }
   &__item{
     margin-top: 15px;
@@ -47,6 +58,10 @@
     &:last-child{
       font-size: 18px;
     }
+  }
+  &__img img{
+    margin-top: 50px;
+    width: 47%;
   }
 }
 
@@ -79,3 +94,4 @@
     border-bottom-right-radius: 15px;
   }
 }
+

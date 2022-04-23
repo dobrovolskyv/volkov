@@ -26,12 +26,17 @@
     margin-left: 5px;
     cursor: pointer;
     display: inline-block;
+    &:hover {
+      transform: translateY(-10px);
+    
+      transition: all 0.2s ease-in;
+    }
   }
+  
   img {
     width: 70%;
   }
   &__contacts{
-    
     background: rgb(24,24,24);
     overflow: hidden;
   }
@@ -49,9 +54,7 @@
   background: white;
 }
 
-.telegram {
-  width: 82%;
-}
+
 .copyright {
   margin-top: 30px;
   cursor: pointer;
@@ -63,8 +66,7 @@
 }
 
 .sponsors {
- 
-  background: rgb(24,24,24);
+   background: rgb(24,24,24);
   align-items: center;
   margin-top: 100px;
   position: relative;
@@ -77,13 +79,14 @@
     align-items: center;
     position: relative;
     animation: spons 10s infinite linear;
+    
     img {
-      width: 12%;
-      filter: contrast(250%);
+      width: 10%;
+      // filter: contrast(250%);
       margin-right: 50px;
       margin-top: 15px;
       display: inline-block;
-    //  filter: brightness(-10%);
+    
     }
   }
 }

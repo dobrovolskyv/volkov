@@ -62,23 +62,23 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
+  display: flex;
+  align-items: center;
   .socials__link {
-    margin-right: 15px;
+    margin-left: 5px;
     cursor: pointer;
     display: inline-block;
   }
 }
 .header__socials a:hover {
-  transform: translateY(-15px);
+  transform: translateY(-10px);
 
   transition: all 0.2s ease-in;
 }
 .socials__img {
-  width: 70%;
+  width: 60%;
 }
-.telegram {
-  width: 82%;
-}
+
 .menu {
   display: none;
 }

@@ -241,12 +241,15 @@
     }
     &__inner {
       overflow: hidden;
+      
       img {
         width: 100%;
         height: 100%;
       }
     }
     &__img {
+      width: 450px;
+      height: 600px;
       overflow: hidden;
       margin: 0 auto;
       display: block;
@@ -257,13 +260,6 @@
       max-width: 630px;
       max-height: 700px;
       margin: auto;
-      // &:hover .adaptive__content {
-      //   background: rgba(0, 0, 0, 0.5);
-      //   bottom: 10px;
-      //   left: 8px;
-      //   transform: translateY(0px);
-      //   transition: transform 0.3s ease-in-out;
-      // }
     }
     &__content {
       max-width: 100%;
@@ -272,7 +268,6 @@
       bottom: 0px;
       left: 0;
       color: $white;
-      // transform: translateY(250px);
       background: rgba(0, 0, 0, 0.5);
       padding: 10px;
     }
@@ -392,20 +387,21 @@
     }
   }
   .recl {
+    margin-bottom: 30px;
     &-1 {
-      width: 400px;
+      width: 370px;
       height: 5px;
       margin-top: 10px;
     }
   
     &-2 {
-      width: 300px;
+      width: 270px;
       height: 5px;
       margin-top: 10px;
     }
   
     &-3 {
-      width: 200px;
+      width: 170px;
       height: 5px;
       margin-top: 10px;
     }
@@ -423,6 +419,9 @@
   }
 }
 @media (max-width: 576px) {
+  .title{
+    font-size: 48px;
+  }
   //header
   .nav {
     &__logo {
@@ -519,13 +518,17 @@
         width: 50%;
       }
     }
-    // &__logo {
-    //   display: block;
-    //   margin: 0 auto;
-    //   width: 40%;
-    // }
+   
   }
+    @keyframes spons {
+      from {
+        transform: translate3d(-798.25px, 0px, 0px);
+      }
     
+      to {
+        transform: translate3d(798.25px, 0px, 0px);
+      }
+    }
   .club__item{
     margin-top: 8px;
   }
@@ -540,12 +543,19 @@
   }
   .sponsors{
     margin-top: 70px;
+    img {
+      width: 20%;
+    }
   }
   .footer{
     padding: 70px 0 10px;
   }
 }
   @media (max-width: 480px) {
+    .title {
+      font-size: 38px;
+      line-height: 44px;
+    }
     .container {
       max-width: 450px;
     }
@@ -640,10 +650,17 @@
       font-size: 16px;
         
     }
+    .call {
+      font-size: 13px;
+      padding: 8px 3px;
+    }
    
   }
 
   @media(max-width: 380px){
+    .title {
+      font-size: 32px;
+    }
     .menu {
       display: flex;
       position: relative;
@@ -712,15 +729,29 @@
       height: 350px;
       transform: translate(0, 0);
     }
+    .recl {
+      &-1 {
+        width: 350px;
+      }
+    
+      &-2 {
+        width: 250px;
+      }
+    
+      &-3 {
+        width: 150px;
+      }
+    }
   }
   @media (max-width: 320px) {
+    .title{
+      font-size: 28px;
+    }
     .container {
       max-width: 300px;
     }
         .nav__list{
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          align-self: center;
+          display: none;
         }
        
     .header__socials {
@@ -744,6 +775,19 @@
     .feetback__item {
       max-width: 300px;
       max-height: 200px;
+    }
+    .recl {
+      &-1 {
+        width: 250px;
+      }
+    
+      &-2 {
+        width: 150px;
+      }
+    
+      &-3 {
+        width: 50px;
+      }
     }
   }
 
